@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.aluno.myapplication.MainActivity">
+
+
+        <EditText
+            android:id="@+id/Filme"
+            android:entries="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/Diretor"
+            android:entries="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/Filme"
+            android:layout_below="@id/Filme">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:text="Buscar Filme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/Filme"
+            android:layout_below="@id/Filme"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:onClick="buscar">
+        </Button>
+
+        <TextView android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSearch"
+            android:layout_alignParentLeft="@+id/buttonSearch">
+        </TextView>
+
+
+    </RelativeLayout>
+</ScrollView>
